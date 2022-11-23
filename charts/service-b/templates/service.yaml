@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: service-b
+  labels:
+    {{- include "service-b.labels" . | nindent 4 }}
+spec:
+  type: ClusterIP
+  ports:
+    - port: 8080
+      targetPort: http-b
+      protocol: TCP
+      name: http
+  selector:
+    {{- include "service-b.selectorLabels" . | nindent 4 }}

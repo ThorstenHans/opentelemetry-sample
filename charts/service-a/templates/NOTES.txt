@@ -1,0 +1,1 @@
+Service A has been deployed to {{ .Release.Namespace }}

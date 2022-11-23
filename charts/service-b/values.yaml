@@ -1,0 +1,6 @@
+image:
+  repository: thorstenhans/otel-sample-service-b
+  tag: 0.0.1
+jaeger:
+  host:
+  port: 6831
